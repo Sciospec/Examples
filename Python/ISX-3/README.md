@@ -88,7 +88,7 @@ Time-stamping and current range extensions are not enabled by default
 This version assumes usage of Full-Speed USB serial mode
 
 # Author
-Quentin Kleinert
-Contact: quentinkleinert850@gmail.com
+Sciospec Scientific Instruments GmbH
+Contact: info@sciospec.com
 
 
