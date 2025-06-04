@@ -20,14 +20,10 @@ MSG_DICT = {
 
 class ISX3:
 
-    def __init__(self, n_el: int) -> None:
+    def __init__(self) -> None:
         """
                     Initializes an ISX3 device handler.
-
-                    Args:
-                        n_el (int): Number of electrodes used in the measurement setup.
-                    """
-        self.n_el = n_el
+        """
         self.serial_protocol = None
         self.device = None
         self.frequency_points = 0
