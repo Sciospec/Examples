@@ -45,7 +45,7 @@ ScioPy-ISX3/
 ```
 from src.ISX3 import ISX3
 
-isx3 = ISX3(n_el=4)
+isx3 = ISX3()
 isx3.connect_device_FS(port="COM3")
 
 isx3.set_fs_settings(
