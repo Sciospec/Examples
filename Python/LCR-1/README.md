@@ -6,7 +6,7 @@ This Python project presents two example scripts to configure and perform a meas
 
 - Connect to LCR-1 via serial port
 - Ask for the device ID
-- Reset the current configuration of the device
+- Reset the current configuration of the device to default values
 - Set up a measurement with the following parameters:
     - voltage excitation at 100 mV amplitude
     - enabled auto-ranging for the current measurement
