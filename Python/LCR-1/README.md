@@ -32,6 +32,8 @@ This project uses the official LCR-1 command set as described in the chapter "St
 
 # Notes
 
-- Compensation was left out
+Compensation was left out.
 
 # Author
+
+Tobias Thalheim
