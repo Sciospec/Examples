@@ -1,3 +1,8 @@
+# Python script that exemplifies typical steps to set up a measurement with an LCR-1 at a single frequency using the SCPI protocol.
+# Author: Dr. Tobias Thalheim
+# Date: 20.06.2025
+# Valid from release 1.1.0 on
+
 import numpy as np
 import serial
 import pandas as pd
@@ -148,4 +153,5 @@ with serial.Serial(port=COM_PORT, timeout=TIMEOUT, write_timeout=TIMEOUT,) as se
             print("Acknowledgement of the stop command: " + acknowledgement)
         else:
             print("No valid acknowledgement line for ABORT included")
+
         print("\n")
