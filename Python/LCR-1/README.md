@@ -1,6 +1,6 @@
 # LCR-1 Measurement Interface
 
-This Python project presents two example scripts to configure and perform a measurement with a **Sciospec LCR-1** using a USB virtual COM port. The recorded measurement data are printed into the console.
+This Python project presents two example scripts to configure and perform a measurement with a **Sciospec LCR-1** using a USB virtual COM port. The recorded measurement data are printed into the console as well as in a ".csv"-file.
 
 ### Features
 
@@ -26,16 +26,16 @@ This Python project presents two example scripts to configure and perform a meas
   - `serial`
   - `pandas`
   - `numpy`
+  - `csv`
+  - `pathlib`
 
 ## Protocol Support
 This project uses the official LCR-1 command set as described in the chapter "Standard Commands for Programmable Instruments (SCPI)" of the associated manual.
 
 ## Notes
-
 Compensation was left out.
 
 ## Author
-
-Tobias Thalheim, Sciospec Scientific Instruments GmbH
+Dr. Tobias Thalheim, Sciospec Scientific Instruments GmbH
 
 Contact: t.thalheim@sciospec.de
