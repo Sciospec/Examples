@@ -351,8 +351,6 @@ class ISX3:
         # Reads the Data
         results = self.read_measurement_data(expected_results=expected_results, timeout=10.0)
 
-        # Stops the measuring
-        self.stop_measurement()
         self.system_message_callback_usb_fs()  # read ACK or NACK
 
         # Write to CSV
@@ -364,7 +362,6 @@ class ISX3:
 
         print(f"{len(results)} Measurement Results were written into measurement_results.csv.")
 
-        self.software_reset()
         time.sleep(6)
         return results
 

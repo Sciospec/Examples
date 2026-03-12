@@ -137,7 +137,6 @@ def check_voltage_range_settings(voltage_measurement_range: str = "±1 V"):
     input_normalized = voltage_measurement_range.strip().lower().replace("±", "").replace("+/-", "").replace(" ", "")
 
     range_map = {
-        "autoranging": 0x00,
         "1v": 0x01,
         "0.09v": 0x02
     }
