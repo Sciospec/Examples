@@ -1,11 +1,10 @@
 # Python script that exemplifies typical steps to set up a measurement with an LCR-1 at multiple frequencies using the SCPI protocol.
 # Author: Dr. Tobias Thalheim
-# Date: 17.01.2026
+# Date: 25.04.2026
 # Valid from release 1.3.0 on
 
 import numpy as np
 import serial
-import pandas as pd
 import csv
 from pathlib import Path
 
