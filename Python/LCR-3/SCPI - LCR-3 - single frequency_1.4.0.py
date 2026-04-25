@@ -4,7 +4,6 @@
 # Valid from release 1.4.0 on
 
 import serial
-import pandas as pd
 import csv
 from pathlib import Path
 
@@ -155,7 +154,7 @@ with serial.Serial(port=COM_PORT, timeout=TIMEOUT, write_timeout=TIMEOUT,) as se
             print("Measurement channel: " + serial_connection.readline().decode().strip())
             print("Acknowledgement of the measurement channel request: " + serial_connection.readline().decode().strip())
 
-            # Start a measurement and let the system record data over 5 individual runs.
+            # Start a measurement and let the system record data over 1 run.
             START_COMMAND = "*TRG\n"
             serial_connection.write(START_COMMAND.encode())
             print("Acknowledgement of the start command: " + serial_connection.readline().decode().strip())
