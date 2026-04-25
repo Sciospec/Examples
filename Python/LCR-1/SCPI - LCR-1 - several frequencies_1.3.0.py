@@ -128,7 +128,7 @@ with serial.Serial(port=COM_PORT, timeout=TIMEOUT, write_timeout=TIMEOUT,) as se
     # adjusted at 10^3 Hz, 10^4 Hz, 10^5 Hz, 10^6 Hz, and 10^7 Hz.
     start_freq = 1e3
     stop_freq = 1e7
-    num_points = 11
+    num_points = 5
     frequencies = np.logspace(np.log10(start_freq), np.log10(stop_freq), num_points)
 
     for frequency in frequencies:
@@ -148,14 +148,12 @@ with serial.Serial(port=COM_PORT, timeout=TIMEOUT, write_timeout=TIMEOUT,) as se
         print("Frequency: " + serial_connection.readline().decode().strip())
         print("Acknowledgement of the frequency request: " + serial_connection.readline().decode().strip())
 
-        # Start a measurement and let the system record data over 10 individual runs.
+        # Start a measurement and let the system record data over 5 individual runs.
         START_COMMAND = "*TRG\n"
         serial_connection.write(START_COMMAND.encode())
         print("Acknowledgement of the start command: " + serial_connection.readline().decode().strip())
         number_of_runs = 5           # Total number of measurement runs
         run_counter = 0              # Counter for current measurement run
-        # Pandas data frame storing the measurement data
-        measurement_data = pd.DataFrame(columns=["first parameter", "second parameter"])
         while run_counter < number_of_runs:
             data = serial_connection.readline().decode().strip()
             # In case of unfortunate measurement settings, additionally to the measurement data, the device sends the
