@@ -33,3 +33,9 @@ This project uses the official LCR-3 command set as described in the chapter "St
 
 ## Notes
 Compensation was left out.
+
+
+## Author
+Dr. Tobias Thalheim, Sciospec Scientific Instruments GmbH
+
+Contact: t.thalheim@sciospec.de
