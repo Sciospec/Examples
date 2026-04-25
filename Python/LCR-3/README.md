@@ -23,7 +23,6 @@ This Python project presents two example scripts to configure and perform a meas
 - A connected and recognized LCR-3 device (e.g., via `COM3` on Windows as implemented in the scripts)
 - Required Python packages:
   - `serial`
-  - `pandas`
   - `numpy`
   - `csv`
   - `pathlib`
