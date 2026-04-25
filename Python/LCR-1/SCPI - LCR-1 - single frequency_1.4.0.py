@@ -4,7 +4,6 @@
 # Valid from release 1.4.0 on
 
 import serial
-import pandas as pd
 import csv
 from pathlib import Path
 
