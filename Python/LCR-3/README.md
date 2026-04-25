@@ -11,7 +11,7 @@ This Python project presents two example scripts to configure and perform a meas
     - voltage excitation at 100 mV amplitude
     - enabled auto-ranging for the current measurement
     - integration time at 1 (medium)
-    - 4-point measurement at the main port, at int-1 int-2 int-3 int-4, as well as at int-5 int-6 int-7 int-8 ("int": channel of the internal multiplexer)
+    - 4-point measurement at the main port, at "int-1 int-2 int-3 int-4", as well as at "int-5 int-6 int-7 int-8" ("int": channel of the internal multiplexer)
     - resistance and quality factor as equivalent circuit model
     - excitation frequency at 1 kHz
 - Start and stop automated measurements
