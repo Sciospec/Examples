@@ -1,6 +1,6 @@
 # Python script that exemplifies typical steps to set up a measurement with an LCR-3 at a single frequency using the SCPI protocol.
 # Author: Dr. Tobias Thalheim
-# Date: 24.04.2026
+# Date: 25.04.2026
 # Valid from release 1.4.0 on
 
 import serial
